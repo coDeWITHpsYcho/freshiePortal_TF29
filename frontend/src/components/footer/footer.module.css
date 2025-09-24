@@ -1,0 +1,190 @@
+
+/* .Footer{
+    width: 100%;
+    height: 10%;
+    background-image: linear-gradient(to left, #141313, #403d45);
+    position: fixed;
+    top: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footerLeft, .socialMedia{
+    height: 100%;
+    width: 100vw;
+    text-align: center;
+    color: aliceblue;
+     
+}
+ 
+
+.footerText{
+  font-size: 25px;
+  text-align: center;
+  width: fit-content;
+}
+
+
+
+.socialMedia{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.Insta:hover,.Fb:hover,.Twitter:hover,.YT:hover,.Linkedin:hover{
+  transform: scale(1.05);
+  transition: linear 0.1s;
+}
+
+.arrow{
+  width: 40px;
+  position:absolute;
+  top: 20%;
+  z-index: 1;
+  
+  
+  animation: forwards;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-name: Arrow;
+}
+
+@keyframes Arrow {
+    
+   0%{
+    left: 30%;
+    
+    
+   }
+
+   100%{
+    left: 95%;
+   }
+  
+} */
+
+
+ /*Code from ChatGPT which enlarges the icons*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+ .Footer {
+  width: 100%;
+  height: 70px;
+  background-color: #031328;
+  position: relative;
+  bottom: 0;
+  z-index: 0;
+}
+
+.footerText {
+  font-size: 25px;
+  text-align: center;
+  width: fit-content;
+  color: aliceblue;
+  font-family: Montserrat;
+
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100vw;
+  text-align: center;
+  color: aliceblue;
+}
+
+.icon {
+  width: 35px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.hovered {
+  transform: scale(1.2);
+}
+
+.Insta:hover, .Fb:hover, .Twitter:hover, .YT:hover, .Linkedin:hover {
+  transform: scale(1.05);
+  transition: linear 0.1s;
+}
+
+
+.arrow {
+  width: 30px;
+  position: absolute;
+  top: 21%;
+  z-index: 0;
+  animation: forwards;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-name: Arrow;
+}
+
+
+@keyframes Arrow {
+  0% {
+      left: 20%;
+  }
+  100% {
+      left: 95%;
+  }
+}
+
+@media(max-width: 775px){
+
+  .Footer{
+    height: 60px;
+  }
+
+  .icon{
+    width: 27px;
+  }
+
+  .arrow{
+    width: 24px;
+    top: 25%;
+  }
+
+  @keyframes Arrow {
+    0% {
+        left: 25%;
+    }
+    100% {
+        left: 95%;
+    }
+  }
+
+  .footerText{
+    font-size: 20px ;
+  }
+
+
+}
+
+@media(max-width:605px){
+  .footerText{
+    display: none;
+  }
+
+  .arrow{
+    display: none;
+  }
+
+  .Footer{
+    height: 50px;
+  }
+
+}
+
+

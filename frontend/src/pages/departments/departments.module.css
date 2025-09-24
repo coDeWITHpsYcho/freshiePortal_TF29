@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.container{
+    height: 100%;
+    width: 100vw;
+    text-align: center;
+    overflow-y: auto;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+.card{
+    border-radius: 0px;
+    border: 1px solid #031328;
+    /* background-color: azure; */
+    height: 400px;
+    width: 300px;
+    margin: 6%;
+    box-shadow: 12px 12px 10px rgba(0,0,0,0.8) ;
+    position: relative;
+    text-align: justify;
+    align-items: center;
+    display: flex;
+    overflow-y: hidden;
+    text-align: center;
+    background-color: #031328;
+}
+.dept{
+    color: aliceblue;
+    margin: auto;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.dept h1{
+    width: 70px;
+    height: 70px;
+    font-size: 48px;
+    background-color: #53c2c6;
+    border-radius: 50%;
+    overflow:hidden ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dept h2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.img{
+    color: #031328;
+}
+
+.line{
+    width: 70%;
+    height: 2px;
+    background-color: #53c2c6;
+}
+
+.managers{
+    position: absolute;
+    top: 20%; 
+    left: 0;
+    bottom: 0; 
+    right: 0;
+    margin: auto; 
+    opacity: 0;
+    color: aliceblue;
+    text-align: center;
+}
+.card:hover{
+    .dept{
+        opacity: 0;
+        transform: rotateY(360deg) ;
+        transition: 0.5s ease-in-out, transform 0.5s;
+        transition-delay: 0s;
+    }
+    .managers{
+        opacity: 1;
+        transform: rotateY(360deg) ;
+        transition: 0.5s ease-in-out, transform 0.5s;
+    }
+        transform: scale(1.1);
+        transition: 0.2s ease-in-out;
+}
+
+.Heading{
+    color: #031328;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 1rem;
+    position: relative;
+    width: 100%;
+    /* text-decoration: underline; */
+}

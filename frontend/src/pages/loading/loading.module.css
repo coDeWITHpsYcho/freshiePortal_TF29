@@ -1,0 +1,71 @@
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0,0,0);
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+.load{
+    height: 100vh;
+    width: 100vw;
+    font-weight: 800;
+    font-size: 0vh;
+    background-image: url("../../assets/home/loadingBG.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    z-index: 2;
+    position: absolute;
+    top: auto;
+    left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+    0%{
+      opacity: 1;
+      font-size: 0;
+    }
+    50%{
+      font-size: 10vw;
+      opacity: 1;
+    }
+    100%{
+      font-size: 30vw;
+      opacity: 0;
+    }
+  }
+
+@media(max-width:430px){
+  @keyframes loading{
+    0%{
+      opacity: 1;
+    }
+    50%{
+      font-size: 20vw;
+      opacity: 1;
+    }
+    100%{
+      opacity: 1;
+      font-size: 100vw;
+    }
+  }
+}
