@@ -55,6 +55,10 @@ const Navbar = () => {
           <a href="/departments" className={styles.dept}>DEPARTMENTS</a>
           <div className={styles.line}></div>
         </div>
+        <div className={styles.deptbtn}>
+          <a href="/game" className={styles.dept}>FUN GAME</a>
+          <div className={styles.line}></div>
+        </div>
         <div className={styles.regbtn}>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVe12ycF4e3YMwWttzOa29fjhhW_5rez1FfrQfUBMtgUYGnQ/viewform" className={styles.reg}>REGISTER</a>
           <div className={styles.line}></div>

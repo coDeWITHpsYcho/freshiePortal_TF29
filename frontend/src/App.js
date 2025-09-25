@@ -6,6 +6,7 @@ import Navbar from './components/navbar/navbar';
 import Departments from './pages/departments/departments';
 import Testimonials from './pages/testimonials/testimonials';
 import Loading from './pages/loading/loading';
+import Game from './pages/game/Pilot'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
             <Route path='/' element={isLoading? <Loading/>:<Home/>} />
             <Route path='/departments' element={<Departments/>} />
             <Route path='/testimonials' element={<Testimonials/>} />
+            <Route path='/game' element={<Game/>} />
           </Routes>
           {/* <Footer /> */}
         </div>
